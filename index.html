@@ -429,7 +429,7 @@ form{ text-align:left;}
     <p class="eyebrow reveal">ENTRY</p>
     <h2 class="reveal">申し込みフォーム</h2>
     <p class="formnote reveal"><span class="w">フォームの送信は仮申し込みです。</span><span class="w">このあとお送りするご案内メールと</span><span class="w">お支払いのお手続きを経て、</span><span class="w">お申し込み完了となります。</span></p>
-    <form id="apply-form" action="https://formspree.io/f/myegkvjy" method="POST">
+    <form id="apply-form" action="https://script.google.com/macros/s/AKfycbzhjJJ18isPSeXSUAad7cxj5N791vaAbIiHu-f6plk3YpM_9K8zuq4nugAkeuDJd1M/exec" method="POST">
       <input type="hidden" name="_subject" value="【ルミアAIスクール】本申し込み">
       <div class="field">
         <label for="name">受講される方のお名前<span class="req">必須</span></label>
@@ -598,7 +598,7 @@ form{ text-align:left;}
 <script>
 (function(){
   /* ▼▼ 送信先URL：Google Apps Script のウェブアプリURL（/exec）に差し替える ▼▼ */
-  var ENDPOINT='https://formspree.io/f/myegkvjy';
+  var ENDPOINT='https://script.google.com/macros/s/AKfycbzhjJJ18isPSeXSUAad7cxj5N791vaAbIiHu-f6plk3YpM_9K8zuq4nugAkeuDJd1M/exec';
   /* ▲▲ 差し替えはこの1行だけ ▲▲ */
   var form=document.getElementById('apply-form');
   if(!form || !window.fetch) return;
