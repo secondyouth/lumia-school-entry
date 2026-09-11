@@ -1,88 +1,76 @@
 <title>受講規約・特定商取引法に基づく表記・プライバシーポリシー｜ルミアAIスクール</title>
 <style>
 :root{
-  --orange:#E1512F; --orange-deep:#BF3A1B;
-  --night:#5B1B0C; --night2:#7A2A12;
-  --paper:#FFF9F3; --paper2:#FDF4E9;
-  --ink:#33261F; --note:#6E5F56; --amber:#C29B33;
+  --key:#E1512F; --key-deep:#BF3A1B;
+  --paper:#FFF9F3; --panel:#FFFDF9;
+  --ink:#33261F; --note:#6E5F56; --line:rgba(225,81,47,.16);
 }
-body{
-  font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif;
-  color:var(--ink); background:var(--paper);
-  line-height:2.0;
-  line-break:strict; word-break:normal; overflow-wrap:break-word;
-  -webkit-font-smoothing:antialiased;
-}
-.kitei{max-width:640px; margin:56px auto 0; text-align:left; background:#FFFDF9; padding:26px 26px 22px;
-  box-shadow:0 1px 1px rgba(91,27,12,.04), 0 30px 56px -42px rgba(91,27,12,.22);}
-.kitei h3{font-size:15px; letter-spacing:.08em; margin-bottom:12px;}
-.kitei ul{margin-left:1.2em;}
-.kitei li{font-size:13.5px; line-height:2.0; color:var(--ink); margin-bottom:8px;}
-.kitei .small{font-size:12.5px; color:var(--note); margin-top:10px;}
-/* ===== 特商法 ===== */
-.law{background:var(--paper); padding:64px 24px 80px;}
-.law .inner{max-width:760px; margin:0 auto;}
-.law details{border:1px solid rgba(225,81,47,.22); background:#FFFDF9;}
-.law summary{cursor:pointer; padding:18px 20px; font-size:14px; font-weight:600; letter-spacing:.08em; color:var(--orange-deep); list-style-position:inside;}
-.law .law-in{padding:6px 20px 22px;}
-.law table{width:100%; border-collapse:collapse; text-align:left;}
-.law th{width:12em; font-size:12px; letter-spacing:.1em; color:var(--note); font-weight:600; padding:12px 6px; border-bottom:1px solid rgba(225,81,47,.14); vertical-align:top;}
-.law td{font-size:13px; padding:12px 6px; border-bottom:1px solid rgba(225,81,47,.14); line-height:1.95;}
-.law th{border-bottom:0; padding:10px 2px 0;}
-.law td{padding:0 2px 10px;}
-.law .lnote{font-size:12px; color:var(--note); margin-top:12px;}
-/* ===== 受講にあたって（規定） ===== */
-.kitei .ksub{font-size:13.5px; font-weight:600; letter-spacing:.06em; color:var(--orange-deep); margin-top:22px;}
-.kitei .ksub:first-of-type{margin-top:2px;}
-.kitei .klead{font-size:13.5px; line-height:2.0; color:var(--ink); margin-top:6px;}
-.kitei .ktable{width:100%; border-collapse:collapse; margin-top:12px;}
-.kitei .ktable th{width:56%; text-align:left; font-size:12.5px; font-weight:500; color:var(--note); line-height:1.8; padding:11px 14px 11px 0; border-bottom:1px solid rgba(225,81,47,.14); vertical-align:top;}
-.kitei .ktable td{font-size:13px; font-weight:600; line-height:1.8; padding:11px 0; border-bottom:1px solid rgba(225,81,47,.14); vertical-align:top;}
-.kitei .ktable .tsub{font-size:11.5px; font-weight:400; color:var(--note);}
-.kitei .ktable .tbr{display:none;}
-.kitei .knote{font-size:12.5px; color:var(--note); line-height:1.9; margin-top:12px;}
-.kitei .ktable th{border-bottom:0; padding:12px 0 3px;}
-.kitei .ktable td{padding:0 0 12px;}
-.kitei .ktable .tsub{margin-left:4px;}
-/* ===== プライバシーポリシー ===== */
-.law details + details{margin-top:14px;}
-.pp h4{margin:20px 0 6px; font-size:13px; letter-spacing:.06em; color:var(--orange-deep);}
-.pp p{font-size:13px; line-height:1.95; margin-bottom:4px;}
-.pp ul{margin:4px 0 6px 1.15em;}
-.pp li{font-size:13px; line-height:1.95;}
-.pp .pp-lead{margin-bottom:4px;}
-.pp .pp-date{margin-top:22px; font-size:12px; color:var(--note);}
-.backlink{margin-top:24px; text-align:center;}
-.backlink a{display:inline-block; text-decoration:none; font-size:13px; letter-spacing:.06em;
-  color:var(--orange-deep); background:#fff; border:1px solid rgba(225,81,47,.45); border-radius:999px;
-  padding:11px 28px; transition:background .2s, color .2s, border-color .2s;}
-.backlink a:hover{background:var(--orange); color:#fff; border-color:var(--orange);}
+*{box-sizing:border-box}
 body{background:var(--paper); color:var(--ink); margin:0;
   font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN",system-ui,sans-serif;
   font-size:15px; line-height:1.95; -webkit-font-smoothing:antialiased;}
 .kwrap{max-width:780px; margin:0 auto; padding:54px 22px 90px;}
-.ktop{border-bottom:2px solid var(--ink); padding-bottom:20px; margin-bottom:12px;}
-.keyebrow{font-size:11px; letter-spacing:.2em; color:var(--orange-deep); font-weight:700; margin:0 0 10px;}
-.ktitle{font-size:clamp(21px,4vw,27px); font-weight:600; letter-spacing:.03em; margin:0 0 10px; line-height:1.6;}
-.klead{font-size:13.5px; color:var(--note); margin:0; line-height:1.9;}
-.ktoc{display:flex; flex-wrap:wrap; gap:10px; margin:22px 0 8px;}
-.ktoc a{font-size:13px; text-decoration:none; color:var(--orange-deep);
-  border:1px solid rgba(225,81,47,.4); border-radius:999px; padding:8px 18px; background:#FFFDF9;}
-.ktoc a:hover{background:var(--orange); color:#fff; border-color:var(--orange);}
-.ksec{margin-top:52px; scroll-margin-top:20px;}
-.ksec > h2{font-size:18px; font-weight:600; letter-spacing:.05em; margin:0 0 4px;
-  padding-bottom:9px; border-bottom:2px solid var(--orange);}
-.ksec .law-in{padding:6px 0 0;}
-.kfoot{margin-top:64px; padding-top:20px; border-top:1px solid rgba(225,81,47,.2);
-  font-size:12.5px; color:var(--note); line-height:1.9;}
-</style>
 
+.ktop{border-bottom:2px solid var(--ink); padding-bottom:20px;}
+.keyebrow{font-size:11px; letter-spacing:.2em; color:var(--key-deep); font-weight:700; margin:0 0 10px;}
+.ktitle{font-size:clamp(20px,3.8vw,26px); font-weight:600; letter-spacing:.03em; margin:0 0 10px; line-height:1.6;}
+.klead{font-size:13.5px; color:var(--note); margin:0; line-height:1.9;}
+.ktabnote{margin:18px 0 0; font-size:12.5px; color:var(--note); background:var(--panel);
+  border-left:3px solid var(--key); padding:11px 15px; line-height:1.85;}
+
+.ktoc{display:flex; flex-wrap:wrap; gap:10px; margin:24px 0 0;}
+.ktoc a{font-size:13px; text-decoration:none; color:var(--key-deep); background:var(--panel);
+  border:1px solid rgba(225,81,47,.4); border-radius:999px; padding:8px 18px;}
+.ktoc a:hover{background:var(--key); color:#fff; border-color:var(--key);}
+
+.ksec{margin-top:56px; scroll-margin-top:16px;}
+.ksec > h2{font-size:18px; font-weight:600; letter-spacing:.05em; margin:0 0 18px;
+  padding-bottom:9px; border-bottom:2px solid var(--key);}
+
+/* ===== 規約・ポリシーの本文 ===== */
+.law-in h4{margin:24px 0 6px; font-size:13.5px; letter-spacing:.05em; color:var(--key-deep);}
+.law-in h4:first-child{margin-top:0;}
+.law-in p{font-size:14px; line-height:1.95; margin:0 0 6px;}
+.law-in ul{margin:4px 0 8px 1.3em; padding:0;}
+.law-in li{font-size:14px; line-height:1.95; margin-bottom:3px;}
+.pp-lead{margin-bottom:10px;}
+.pp-date{margin-top:26px; font-size:12.5px; color:var(--note);}
+
+/* ===== 特商法の表 ===== */
+.law-in table{width:100%; border-collapse:collapse; margin:0;}
+.law-in th{width:11.5em; text-align:left; vertical-align:top;
+  font-size:12.5px; font-weight:600; letter-spacing:.06em; color:var(--note);
+  padding:14px 16px 14px 0; border-bottom:1px solid var(--line);}
+.law-in td{text-align:left; vertical-align:top;
+  font-size:14px; line-height:1.9; padding:14px 0; border-bottom:1px solid var(--line);}
+.law-in tr:first-child th,.law-in tr:first-child td{padding-top:0;}
+.law-in tr:last-child th,.law-in tr:last-child td{border-bottom:0;}
+
+.kclose{margin-top:52px; text-align:center;}
+.kclose button{font:inherit; font-size:13.5px; letter-spacing:.05em; cursor:pointer;
+  color:var(--key-deep); background:var(--panel); border:1px solid rgba(225,81,47,.45);
+  border-radius:999px; padding:12px 30px;}
+.kclose button:hover{background:var(--key); color:#fff; border-color:var(--key);}
+.kclose .kmsg{margin-top:12px; font-size:12.5px; color:var(--note); line-height:1.85;}
+
+.kfoot{margin-top:44px; padding-top:20px; border-top:1px solid var(--line);
+  font-size:12.5px; color:var(--note); text-align:center;}
+
+@media (max-width:640px){
+  .kwrap{padding:40px 18px 72px;}
+  .law-in table,.law-in tbody,.law-in tr,.law-in th,.law-in td{display:block; width:100%;}
+  .law-in th{border-bottom:0; padding:14px 0 2px;}
+  .law-in td{padding:0 0 14px; border-bottom:1px solid var(--line);}
+  .law-in tr:first-child th{padding-top:0;}
+}
+</style>
 <div class="kwrap">
   <div class="ktop">
     <p class="keyebrow">ルミアAIスクール</p>
     <h1 class="ktitle">受講規約・特定商取引法に基づく表記・プライバシーポリシー</h1>
     <p class="klead">AIを活用した新規事業開発コース および AI秘書コース に共通して適用されます。</p>
   </div>
+  <p class="ktabnote">このページは別のタブで開いています。読み終わったらタブを閉じると、入力途中の申し込みページにそのまま戻れます。<b>入力内容は消えません。</b></p>
   <nav class="ktoc">
     <a href="#terms">受講規約</a>
     <a href="#tokushoho">特定商取引法に基づく表記</a>
@@ -241,5 +229,18 @@ body{background:var(--paper); color:var(--ink); margin:0;
         <p class="pp-date">制定日：2026年〇月〇日</p>
       </div></section>
 
+  <p class="kclose">
+    <button type="button" id="kclose">このページを閉じて申し込みに戻る</button>
+    <span class="kmsg" id="kmsg" hidden>このタブは自動で閉じられませんでした。ブラウザのタブを閉じてお戻りください。</span>
+  </p>
   <p class="kfoot">運営：株式会社Lumia</p>
+  <script>
+  (function(){
+    var b=document.getElementById('kclose'); if(!b) return;
+    b.addEventListener('click',function(){
+      window.close();
+      setTimeout(function(){ document.getElementById('kmsg').hidden=false; },400);
+    });
+  })();
+  </script>
 </div>
