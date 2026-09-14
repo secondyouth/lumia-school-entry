@@ -346,62 +346,31 @@ form{ text-align:left;}
   .sp-grid{grid-template-columns:1fr; gap:16px;}
 }
 
-/* ===== 42項目のマトリクス ===== */
+/* ===== AIで速くなる作業 ===== */
 .matrix{position:relative; overflow:hidden; background:var(--paper2); padding:92px 24px 96px;}
 .matrix .inner{max-width:860px; margin:0 auto; text-align:center;}
 .mx-lead{margin-top:22px; font-size:clamp(13.5px,2.8vw,15.5px); color:var(--ink); line-height:2.0;}
-.mx-legend{display:flex; flex-wrap:wrap; justify-content:center; gap:10px 22px; margin-top:30px;
-  font-size:12.5px; color:var(--note);}
-.mx-legend span{display:inline-flex; align-items:center; gap:7px;}
+.mx-legend{display:inline-flex; align-items:center; gap:9px; margin-top:26px;
+  font-size:12.5px; color:var(--note); background:#FFFDF9; border-radius:999px; padding:8px 18px 8px 12px;}
 .mk{display:inline-flex; align-items:center; justify-content:center; width:22px; height:22px;
-  border-radius:50%; font-size:12px; font-weight:700; flex:0 0 auto; line-height:1;}
-.mk.a{background:var(--orange); color:#fff;}
-.mk.o{background:#fff; color:var(--orange-deep); border:1px solid rgba(225,81,47,.55);}
-.mk.t{background:rgba(194,155,51,.18); color:#8A6512;}
-.mk.x{background:rgba(51,38,31,.1); color:var(--note);}
-.mx-sum{margin-top:26px; font-size:clamp(14px,2.9vw,16.5px); line-height:2.0; color:var(--ink);}
-.mx-sum b{color:var(--orange-deep); font-size:1.15em;}
-.mx-grid{display:grid; grid-template-columns:1fr 1fr; gap:26px 34px; margin-top:40px; text-align:left;}
-.mx-step{break-inside:avoid;}
+  border-radius:50%; font-size:12px; font-weight:700; flex:0 0 auto; line-height:1;
+  background:#fff; color:var(--orange-deep); border:1px solid rgba(225,81,47,.55);}
+.mx-grid{display:grid; grid-template-columns:1fr 1fr; gap:26px 34px; margin-top:38px; text-align:left;}
 .mx-h{display:flex; align-items:baseline; gap:9px; font-size:14.5px; font-weight:700; color:var(--ink);
   padding-bottom:9px; border-bottom:1px solid rgba(225,81,47,.3);}
 .mx-no{font-family:Georgia,serif; font-style:italic; font-size:15px; color:var(--orange);}
-.mx-c{margin-left:auto; font-size:11.5px; font-weight:400; color:var(--note); white-space:nowrap;}
 .mx-step ul{list-style:none; margin:0; padding:0;}
 .mx-step li{display:flex; align-items:flex-start; gap:10px; padding:9px 2px;
   border-bottom:1px dashed rgba(225,81,47,.16);}
 .mx-step li:last-child{border-bottom:0;}
 .mx-step .it{font-size:13.5px; line-height:1.75; color:var(--ink);}
-.mx-note{margin-top:40px; font-size:clamp(13px,2.7vw,14.5px); color:var(--note); line-height:2.0;}
+.mx-close{margin-top:42px; font-size:clamp(14px,2.9vw,16px); line-height:2.0; color:var(--ink);}
 @media (max-width:700px){
   .matrix{padding:76px 20px 80px;}
   .mx-grid{grid-template-columns:1fr; gap:24px;}
 }
 .cpanel .ctax{margin-top:-8px; margin-bottom:2px; font-size:12px; color:var(--note); letter-spacing:.02em;}
 .cf-list .cf-sub{display:block; font-size:12px; font-weight:400; color:var(--note); margin-top:2px;}
-
-/* ===== 根っこにあるのはリサーチ ===== */
-.core{position:relative; overflow:hidden; padding:92px 24px 96px;
-  background:linear-gradient(180deg, var(--paper2) 0%, #F6E7DF 48%, var(--paper2) 100%);}
-.core .inner{max-width:820px; margin:0 auto; text-align:center;}
-.core h2{margin-bottom:0;}
-.co-lead{margin-top:26px; font-size:clamp(14px,2.9vw,16px); line-height:2.1; color:var(--ink);}
-.co-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:40px; text-align:left;}
-.co-card{background:#FFFDF9; border:1px solid rgba(225,81,47,.3); border-radius:3px;
-  padding:24px 22px 20px; position:relative;
-  box-shadow:0 1px 1px rgba(91,27,12,.04), 0 24px 44px -32px rgba(91,27,12,.34);}
-.co-card .mk{width:28px; height:28px; font-size:15px;}
-.co-n{margin-top:14px; font-size:clamp(15px,3vw,17px); font-weight:700; letter-spacing:.04em; color:var(--ink);}
-.co-d{margin-top:8px; font-size:13.5px; line-height:1.9; color:var(--ink);}
-.co-s{margin-top:14px; padding-top:11px; border-top:1px dashed rgba(225,81,47,.24);
-  font-size:11.5px; letter-spacing:.06em; color:var(--note);}
-.co-mid{margin-top:32px; font-size:clamp(13.5px,2.8vw,15px); line-height:2.0; color:var(--note);}
-.co-close{margin-top:30px; padding-top:28px; border-top:1px solid rgba(225,81,47,.28);
-  font-size:clamp(14.5px,3vw,17px); font-weight:600; line-height:2.05; color:var(--orange-deep);}
-@media (max-width:760px){
-  .core{padding:76px 20px 80px;}
-  .co-grid{grid-template-columns:1fr; gap:14px;}
-}
 </style>
 <script>
 (function(){
@@ -483,10 +452,6 @@ form{ text-align:left;}
   <div class="inner">
     <p class="eyebrow reveal">WHAT YOU CAN DO</p>
     <h2 class="reveal">できるようになること</h2>
-    <p class="bridge reveal"><span class="w">Lumia WEは、</span><span class="w">企画から募集開始まで</span><span class="w">3日間で立ち上がり、</span><br>
-    <span class="w">無料体験会では、</span><span class="w">その裏側をご覧いただいています。</span></p>
-    <p class="bridge reveal"><span class="w">ただ、「見て分かる」と</span><span class="w">「自分でできる」の間には、</span><span class="w">距離があります。</span><br>
-    <span class="w">その距離を埋めるのが、</span><span class="w">このスクールです。</span></p>
     <p class="goal reveal"><span class="w">この8つのステップを、</span><span class="w">あなたの事業で、</span><br><span class="w">あなた自身が回せるようになる。</span></p>
 
     <ol class="steps reveal">
@@ -507,141 +472,87 @@ form{ text-align:left;}
 
 <section class="matrix">
   <div class="inner">
-    <p class="eyebrow reveal">CURRICULUM</p>
-    <h2 class="reveal">3日間でやること、全部で42</h2>
-    <p class="mx-lead reveal"><span class="w">Lumia WEを立ち上げた3日間で、</span><span class="w">実際に手を動かした作業です。</span><br><span class="w">3日間で扱うのは01から07まで。</span><span class="w">1項目も伏せずに掲載しています。</span></p>
+    <p class="eyebrow reveal">WHAT AI CAN DO</p>
+    <h2 class="reveal">この作業は、AIで速くなります</h2>
+    <p class="mx-lead reveal"><span class="w">先ほどの7つのステップを、</span><span class="w">実際の作業まで分けたものです。</span><br><span class="w">Lumia WEを立ち上げた3日間で、</span><span class="w">手を動かした内容そのものです。</span><br><span class="w">そのうち、</span><span class="w">AIを使って速くできるものを挙げました。</span></p>
 
-    <div class="mx-legend reveal">
-      <span><span class="mk a">◎</span>AIが主役</span>
-      <span><span class="mk o">○</span>AIと一緒に</span>
-      <span><span class="mk t">△</span>AIは補助</span>
-      <span><span class="mk x">×</span>人だけ</span>
-    </div>
-
-    <p class="mx-sum reveal"><span class="w">42項目のうち、</span><span class="w">人だけで進めるのは<b>9項目</b>。</span><br><span class="w">残りの<b>33項目</b>は、</span><span class="w">AIと一緒に進められます。</span></p>
+    <p class="mx-legend reveal"><span class="mk o">○</span>AIを使って速くできる作業</p>
 
     <div class="mx-grid reveal">
       <div class="mx-step">
-        <p class="mx-h"><span class="mx-no">01</span>5W1H・ペルソナ設計<span class="mx-c">6項目</span></p>
+        <p class="mx-h"><span class="mx-no">01</span>5W1H・ペルソナ設計</p>
         <ul>
           <li><span class="mk o">○</span><span class="it">構想をテキストに起こす</span></li>
           <li><span class="mk o">○</span><span class="it">コミュニティ構造の設計</span></li>
           <li><span class="mk o">○</span><span class="it">2階建て案の検討</span></li>
-          <li><span class="mk x">×</span><span class="it">同案の取り下げ判断</span></li>
-          <li><span class="mk a">◎</span><span class="it">ペルソナ立案（AI8体）</span></li>
-          <li><span class="mk a">◎</span><span class="it">敵対検証</span></li>
+          <li><span class="mk o">○</span><span class="it">ペルソナ立案（AI8体）</span></li>
+          <li><span class="mk o">○</span><span class="it">敵対検証</span></li>
         </ul>
       </div>
       <div class="mx-step">
-        <p class="mx-h"><span class="mx-no">02</span>サービス設計<span class="mx-c">4項目</span></p>
+        <p class="mx-h"><span class="mx-no">02</span>サービス設計</p>
         <ul>
-          <li><span class="mk x">×</span><span class="it">料金方針の決定</span></li>
           <li><span class="mk o">○</span><span class="it">年間の活動内容の確定</span></li>
           <li><span class="mk o">○</span><span class="it">アカウント分離の設計</span></li>
-          <li><span class="mk x">×</span><span class="it">3人の分担決め</span></li>
         </ul>
       </div>
       <div class="mx-step">
-        <p class="mx-h"><span class="mx-no">03</span>市場・競合リサーチ<span class="mx-c">2項目</span></p>
+        <p class="mx-h"><span class="mx-no">03</span>市場・競合リサーチ</p>
         <ul>
-          <li><span class="mk a">◎</span><span class="it">市場リサーチ（公的データ）</span></li>
-          <li><span class="mk x">×</span><span class="it">狙う層を決める判断</span></li>
+          <li><span class="mk o">○</span><span class="it">市場リサーチ（公的データ）</span></li>
         </ul>
       </div>
       <div class="mx-step">
-        <p class="mx-h"><span class="mx-no">04</span>集客・導線設計<span class="mx-c">3項目</span></p>
+        <p class="mx-h"><span class="mx-no">04</span>集客・導線設計</p>
         <ul>
-          <li><span class="mk t">△</span><span class="it">既存リストの棚卸し</span></li>
-          <li><span class="mk t">△</span><span class="it">フォロワー実数の確認</span></li>
+          <li><span class="mk o">○</span><span class="it">既存リストの棚卸し</span></li>
+          <li><span class="mk o">○</span><span class="it">フォロワー実数の確認</span></li>
           <li><span class="mk o">○</span><span class="it">集客経路の試算と併走計画</span></li>
         </ul>
       </div>
       <div class="mx-step">
-        <p class="mx-h"><span class="mx-no">05</span>コンセプト・ブランディング<span class="mx-c">8項目</span></p>
+        <p class="mx-h"><span class="mx-no">05</span>コンセプト・ブランディング</p>
         <ul>
           <li><span class="mk o">○</span><span class="it">名前の決定</span></li>
-          <li><span class="mk a">◎</span><span class="it">訴求コピーの複数案出し</span></li>
-          <li><span class="mk x">×</span><span class="it">採用案の決定</span></li>
+          <li><span class="mk o">○</span><span class="it">訴求コピーの複数案出し</span></li>
           <li><span class="mk o">○</span><span class="it">言葉の設計原則</span></li>
           <li><span class="mk o">○</span><span class="it">禁句リストの作成</span></li>
-          <li><span class="mk a">◎</span><span class="it">ロゴの制作</span></li>
-          <li><span class="mk a">◎</span><span class="it">ロゴv2の合成</span></li>
-          <li><span class="mk a">◎</span><span class="it">派生画像の切り出し14点</span></li>
+          <li><span class="mk o">○</span><span class="it">ロゴの制作</span></li>
+          <li><span class="mk o">○</span><span class="it">ロゴv2の合成</span></li>
+          <li><span class="mk o">○</span><span class="it">派生画像の切り出し14点</span></li>
         </ul>
       </div>
       <div class="mx-step">
-        <p class="mx-h"><span class="mx-no">06</span>LP・告知物制作<span class="mx-c">10項目</span></p>
+        <p class="mx-h"><span class="mx-no">06</span>LP・告知物制作</p>
         <ul>
-          <li><span class="mk a">◎</span><span class="it">告知チラシの制作</span></li>
-          <li><span class="mk a">◎</span><span class="it">LPのデザイン</span></li>
+          <li><span class="mk o">○</span><span class="it">告知チラシの制作</span></li>
+          <li><span class="mk o">○</span><span class="it">LPのデザイン</span></li>
           <li><span class="mk o">○</span><span class="it">2枚扉の案内ページ設計</span></li>
           <li><span class="mk o">○</span><span class="it">NG部品を名指しで排除</span></li>
-          <li><span class="mk a">◎</span><span class="it">LP全文のライティング</span></li>
-          <li><span class="mk a">◎</span><span class="it">フォーム文面・完了画面</span></li>
-          <li><span class="mk a">◎</span><span class="it">LPの実装</span></li>
-          <li><span class="mk a">◎</span><span class="it">申込フォームの実装</span></li>
-          <li><span class="mk a">◎</span><span class="it">フォームの条件分岐</span></li>
-          <li><span class="mk a">◎</span><span class="it">案内ページの実装</span></li>
+          <li><span class="mk o">○</span><span class="it">LP全文のライティング</span></li>
+          <li><span class="mk o">○</span><span class="it">フォーム文面・完了画面</span></li>
+          <li><span class="mk o">○</span><span class="it">LPの実装</span></li>
+          <li><span class="mk o">○</span><span class="it">申込フォームの実装</span></li>
+          <li><span class="mk o">○</span><span class="it">フォームの条件分岐</span></li>
+          <li><span class="mk o">○</span><span class="it">案内ページの実装</span></li>
         </ul>
       </div>
       <div class="mx-step">
-        <p class="mx-h"><span class="mx-no">07</span>公開・募集開始<span class="mx-c">9項目</span></p>
+        <p class="mx-h"><span class="mx-no">07</span>公開・募集開始</p>
         <ul>
           <li><span class="mk o">○</span><span class="it">送信システムの接続</span></li>
-          <li><span class="mk t">△</span><span class="it">送信テスト2回</span></li>
-          <li><span class="mk t">△</span><span class="it">3ページを本番公開</span></li>
-          <li><span class="mk a">◎</span><span class="it">スマホ表示の修正→再公開</span></li>
-          <li><span class="mk x">×</span><span class="it">専用の公式LINEを新設</span></li>
-          <li><span class="mk x">×</span><span class="it">オープンチャット開設</span></li>
+          <li><span class="mk o">○</span><span class="it">送信テスト2回</span></li>
+          <li><span class="mk o">○</span><span class="it">3ページを本番公開</span></li>
+          <li><span class="mk o">○</span><span class="it">スマホ表示の修正→再公開</span></li>
           <li><span class="mk o">○</span><span class="it">招待導線の設計</span></li>
-          <li><span class="mk x">×</span><span class="it">アンバサダーへの打診</span></li>
-          <li><span class="mk x">×</span><span class="it">告知から3時間で30名満席</span></li>
         </ul>
       </div>
     </div>
 
-    <p class="mx-note reveal"><span class="w">人だけの9項目は、</span><span class="w">「決める」ことと「人に会う」ことに集中しています。</span><br><span class="w">本コースでは、</span><span class="w">残る33項目それぞれについて、</span><span class="w">AIへの指示の出し方と、</span><span class="w">返ってきたものの整え方を扱います。</span></p>
+    <p class="mx-close reveal"><span class="w">一つひとつ、</span><span class="w">どのように指示を出し、</span><span class="w">返ってきたものをどう整えるか。</span><br><span class="w">3日間で扱うのは、</span><span class="w">そこです。</span></p>
   </div>
 </section>
 
-
-<section class="core">
-  <div class="inner">
-    <p class="eyebrow reveal">THE CORE</p>
-    <h2 class="reveal">判断の精度は、リサーチで決まる</h2>
-
-    <p class="co-lead reveal"><span class="w">新規事業の検討で判断に迷う場面は、</span><span class="w">その多くが情報の不足から生じます。</span><br>
-    <span class="w">誰に向けるのか。</span><span class="w">市場はどこにあるのか。</span><span class="w">この案に弱点はないか。</span><br>
-    <span class="w">判断の前には、</span><span class="w">かならず調べる工程が挟まります。</span></p>
-
-    <div class="co-grid reveal">
-      <div class="co-card">
-        <span class="mk a">◎</span>
-        <p class="co-n">市場リサーチ</p>
-        <p class="co-d">市場がどこにあるのかを、公的データから読み解きます</p>
-        <p class="co-s">03 市場・競合リサーチ</p>
-      </div>
-      <div class="co-card">
-        <span class="mk a">◎</span>
-        <p class="co-n">ペルソナ立案</p>
-        <p class="co-d">想定する顧客像を8通り立て、その違いを比べます</p>
-        <p class="co-s">01 5W1H・ペルソナ設計</p>
-      </div>
-      <div class="co-card">
-        <span class="mk a">◎</span>
-        <p class="co-n">敵対検証</p>
-        <p class="co-d">その案の弱点を、AIに指摘させます</p>
-        <p class="co-s">01 5W1H・ペルソナ設計</p>
-      </div>
-    </div>
-
-    <p class="co-mid reveal"><span class="w">この3つは、</span><span class="w">ひとつのステップに収まっていません。</span><br><span class="w">7つのステップそれぞれで、</span><span class="w">判断の直前に現れます。</span></p>
-
-    <p class="co-close reveal"><span class="w">調べるのはAI。</span><span class="w">決めるのは人。</span><br>
-    <span class="w">42項目の中で、</span><span class="w">AIとの相性がいちばん良いのがこの領域です。</span><br>
-    <span class="w">ここが速くなると、</span><span class="w">42項目すべての進み方が変わります。</span></p>
-  </div>
-</section>
 
 <section class="course">
   <div class="inner">
