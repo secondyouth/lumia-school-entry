@@ -249,6 +249,7 @@ form{ text-align:left;}
 
 /* ===== 受講にあたって（規定） ===== */
 .kitei .ksub{font-size:13.5px; font-weight:600; letter-spacing:.06em; color:var(--orange-deep); margin-top:22px;}
+.kitei .kcourse{margin-top:16px; font-size:12.5px; font-weight:600; letter-spacing:.08em; color:var(--note);}
 .kitei .ksub:first-of-type{margin-top:2px;}
 .kitei .klead{font-size:13.5px; line-height:2.0; color:var(--ink); margin-top:6px;}
 .kitei .ktable{width:100%; border-collapse:collapse; margin-top:12px;}
@@ -314,6 +315,8 @@ form{ text-align:left;}
   .cf-list dd{padding:0 0 12px; border-top:0;}
 }
 .flink{color:inherit; text-decoration:underline; text-underline-offset:3px;}
+.cpanel .ctax{margin-top:-8px; margin-bottom:2px; font-size:12px; color:var(--note); letter-spacing:.02em;}
+.cf-list .cf-sub{display:block; font-size:12px; font-weight:400; color:var(--note); margin-top:2px;}
 </style>
 <script>
 (function(){
@@ -388,23 +391,25 @@ form{ text-align:left;}
       <div class="cpanel reveal">
         <p class="ckind">通常コース</p>
         <p class="cname">AI秘書コース 3ヶ月版</p>
-        <p class="cprice"><span class="num">150,000</span><span class="yen">円</span></p>
+        <p class="cprice"><span class="num">165,000</span><span class="yen">円（税込）</span></p>
+        <p class="ctax">本体 150,000円 ＋ 消費税 15,000円</p>
         <dl>
           <dt>期間</dt><dd>3ヶ月間</dd>
-          <dt>日程</dt><dd><span class="w">①金曜クラス</span><br><span class="w">2026年10月30日(金)開講</span><br><span class="w">毎週金曜 10:00〜12:00・全8回</span><span class="cbr"></span><span class="w">②土曜クラス</span><br><span class="w">2026年10月31日(土)開講</span><br><span class="w">毎週土曜 10:00〜12:00・全8回</span></dd>
+          <dt>日程</dt><dd><span class="w">①金曜クラス</span><br><span class="w">2026年10月30日(金)開講</span><br><span class="w">金曜 10:00〜12:00・全8回</span><span class="cbr"></span><span class="w">②土曜クラス</span><br><span class="w">2026年10月31日(土)開講</span><br><span class="w">土曜 10:00〜12:00・全8回</span></dd>
           <dt>形式</dt><dd>オンライン（Zoom）</dd>
           <dt>定員</dt><dd>12名</dd>
           <dt>最少開講人数</dt><dd>3名</dd>
-          <dt>進め方</dt><dd><span class="w">仕事や家庭と両立しながら、</span><span class="w">週ごとに進めていきます。</span></dd>
+          <dt>進め方</dt><dd><span class="w">仕事や家庭と両立しながら、</span><span class="w">少しずつ進めていきます。</span></dd>
         </dl>
       </div>
       <div class="cpanel alt reveal">
         <p class="ckind">通常コース</p>
         <p class="cname">AI秘書コース 3日間版</p>
-        <p class="cprice"><span class="num">200,000</span><span class="yen">円</span></p>
+        <p class="cprice"><span class="num">220,000</span><span class="yen">円（税込）</span></p>
+        <p class="ctax">本体 200,000円 ＋ 消費税 20,000円</p>
         <dl>
           <dt>期間</dt><dd>3日間</dd>
-          <dt>日程</dt><dd>2026年11月16日(月)〜18日(水)</dd>
+          <dt>日程</dt><dd><span class="w">2026年11月16日(月)〜18日(水)</span><br><span class="w">各日 10:00〜17:00</span><span class="w">（うち昼休憩1時間）</span></dd>
           <dt>形式</dt><dd>オンライン（Zoom）</dd>
           <dt>定員</dt><dd>8名</dd>
           <dt>最少開講人数</dt><dd>3名</dd>
@@ -446,14 +451,22 @@ form{ text-align:left;}
 
       <p class="ksub">キャンセル・返金</p>
       <p class="klead"><span class="w">お支払い完了後にキャンセルされる場合は、</span><span class="w">ご連絡をいただいた時期に応じて、</span><span class="w">次のとおり返金いたします。</span></p>
+      <p class="kcourse">3ヶ月版</p>
       <table class="ktable">
         <tbody>
           <tr><th>申込日を起算日として8日以内</th><td>受講料の100％を返金</td></tr>
-          <tr><th>9日目以降 〜 開催日の8日前 終日まで</th><td>受講料の30％を返金</td></tr>
-          <tr><th>開催日の7日前以降</th><td>返金不可</td></tr>
+          <tr><th>9日目以降 〜 開講日の8日前 終日まで</th><td>受講料の30％を返金</td></tr>
+          <tr><th>開講日の7日前以降</th><td>返金不可</td></tr>
         </tbody>
       </table>
-      <p class="knote"><span class="w">※返金の際に発生する振込手数料は</span><span class="w">お客様負担となります。</span><br><span class="w">また、開催日の7日前以降は、</span><span class="w">いかなる理由であっても</span><span class="w">返金いたしかねます。</span></p>
+      <p class="kcourse">3日間版</p>
+      <table class="ktable">
+        <tbody>
+          <tr><th>開講日の8日前 終日まで</th><td>受講料の30％を返金</td></tr>
+          <tr><th>開講日の7日前以降</th><td>返金不可</td></tr>
+        </tbody>
+      </table>
+      <p class="knote"><span class="w">※返金の際に発生する振込手数料は</span><span class="w">お客様負担となります。</span><br><span class="w">また、開講日の7日前以降は、</span><span class="w">いかなる理由であっても</span><span class="w">返金いたしかねます。</span></p>
 
       <p class="ksub">お申し込みが最少開講人数に満たない場合</p>
       <p class="klead"><span class="w">開講を延期または中止し、</span><span class="w">お支払い済みの受講料は</span><span class="w">全額を返金いたします。</span></p>
@@ -505,10 +518,17 @@ form{ text-align:left;}
       <div class="field">
         <label>ご希望<span class="req">必須</span></label>
         <div class="radios">
-          <label><input type="radio" name="course" value="AI秘書コース 3ヶ月版 金曜クラス（150,000円・10/30開講）" required><span>3ヶ月版 金曜クラス に申し込む<small class="rnote">150,000円・2026年10月30日(金)開講・毎週金曜 10:00〜12:00・全8回</small></span></label>
-          <label><input type="radio" name="course" value="AI秘書コース 3ヶ月版 土曜クラス（150,000円・10/31開講）"><span>3ヶ月版 土曜クラス に申し込む<small class="rnote">150,000円・2026年10月31日(土)開講・毎週土曜 10:00〜12:00・全8回</small></span></label>
-          <label><input type="radio" name="course" value="AI秘書コース 3日間版（200,000円・11/16〜18）"><span>3日間版 に申し込む<small class="rnote">200,000円・2026年11月16日(月)〜18日(水)</small></span></label>
+          <label><input type="radio" name="course" value="AI秘書コース 3ヶ月版 金曜クラス（165,000円・10/30開講）" required><span>3ヶ月版 金曜クラス に申し込む<small class="rnote">165,000円（税込）・2026年10月30日(金)開講・金曜 10:00〜12:00・全8回</small></span></label>
+          <label><input type="radio" name="course" value="AI秘書コース 3ヶ月版 土曜クラス（165,000円・10/31開講）"><span>3ヶ月版 土曜クラス に申し込む<small class="rnote">165,000円（税込）・2026年10月31日(土)開講・土曜 10:00〜12:00・全8回</small></span></label>
+          <label><input type="radio" name="course" value="AI秘書コース 3日間版（220,000円・11/16〜18）"><span>3日間版 に申し込む<small class="rnote">220,000円（税込）・2026年11月16日(月)〜18日(水)・各日 10:00〜17:00</small></span></label>
           <label><input type="radio" name="course" value="AI秘書コースについて相談したい"><span>まず相談したい<small class="rnote">後日ZOOMにて面談を実施しますので、ご連絡させていただきます</small></span></label>
+        </div>
+      </div>
+      <div class="field">
+        <label>無料体験（フロントセミナー）は受講しましたか<span class="req">必須</span></label>
+        <div class="radios">
+          <label><input type="radio" name="taiken" value="受講した" required><span>受講した</span></label>
+          <label><input type="radio" name="taiken" value="受講していない"><span>受講していない</span></label>
         </div>
       </div>
       <div class="field">
@@ -542,9 +562,17 @@ form{ text-align:left;}
       </div>
     </form>
     <div class="thanks">
-      <p class="tt">仮申し込みを受け付けました</p>
+      <div class="th-apply">
+      <p class="tt">お申し込みを受け付けました</p>
       <p><span class="w">ご入力のメールアドレス宛に、</span><span class="w">受講とお支払いのご案内をお送りします。</span><br>
       <span class="w">メールが届かない場合は、</span><span class="w">迷惑メールフォルダのご確認をお願いします。</span></p>
+      </div>
+      <div class="th-consult" hidden>
+      <p class="tt">ご相談を受け付けました</p>
+      <p><span class="w">後日、面談の日程を</span><span class="w">ご入力のメールアドレス宛にご案内します。</span><br>
+      <span class="w">この時点ではお申し込みは確定せず、</span><span class="w">受講料も発生しません。</span><br>
+      <span class="w">メールが届かない場合は、</span><span class="w">迷惑メールフォルダのご確認をお願いします。</span></p>
+      </div>
     </div>
   </div>
 </section>
@@ -578,14 +606,15 @@ form{ text-align:left;}
   var err=form.querySelector('.formerror');
   /* ご希望の選択に応じて、確認内容を表示する（特商法12条の6） */
   var CF_PAY='お申し込み後にお送りするご案内メールに記載の方法で、メールのお送りから7日以内にお支払いください。お支払いに際して生じる振込手数料はお客様のご負担となります。';
-  var CF_REF='申込日を起算日として8日以内は受講料の100％、9日目以降〜開催日の8日前 終日までは受講料の30％を返金します。開催日の7日前以降は返金不可です。返金の際に生じる振込手数料はお客様のご負担となります。';
+  var CF_REF='申込日を起算日として8日以内は受講料の100％、9日目以降〜開講日の8日前 終日までは受講料の30％を返金します。開講日の7日前以降は返金不可です。返金の際に生じる振込手数料はお客様のご負担となります。';
+  var CF_REF3='開講日の8日前 終日までは受講料の30％を返金します。開講日の7日前以降は返金不可です。返金の際に生じる振込手数料はお客様のご負担となります。';
   var CF={
-    'AI秘書コース 3ヶ月版 金曜クラス（150,000円・10/30開講）':
-      ['AI秘書コース 3ヶ月版 金曜クラス','150,000円（税込）','全8回（1回2時間）','2026年10月30日(金)開講　毎週金曜 10:00〜12:00','12名（最少開講人数 3名）'],
-    'AI秘書コース 3ヶ月版 土曜クラス（150,000円・10/31開講）':
-      ['AI秘書コース 3ヶ月版 土曜クラス','150,000円（税込）','全8回（1回2時間）','2026年10月31日(土)開講　毎週土曜 10:00〜12:00','12名（最少開講人数 3名）'],
-    'AI秘書コース 3日間版（200,000円・11/16〜18）':
-      ['AI秘書コース 3日間版','200,000円（税込）','3日間','2026年11月16日(月) 〜 18日(水)','8名（最少開講人数 3名）']
+    'AI秘書コース 3ヶ月版 金曜クラス（165,000円・10/30開講）':
+      ['AI秘書コース 3ヶ月版 金曜クラス','165,000円（税込）<span class="cf-sub">本体 150,000円 ＋ 消費税 15,000円</span>','全8回（1回2時間）','2026年10月30日(金)開講　金曜 10:00〜12:00','12名（最少開講人数 3名）'],
+    'AI秘書コース 3ヶ月版 土曜クラス（165,000円・10/31開講）':
+      ['AI秘書コース 3ヶ月版 土曜クラス','165,000円（税込）<span class="cf-sub">本体 150,000円 ＋ 消費税 15,000円</span>','全8回（1回2時間）','2026年10月31日(土)開講　土曜 10:00〜12:00','12名（最少開講人数 3名）'],
+    'AI秘書コース 3日間版（220,000円・11/16〜18）':
+      ['AI秘書コース 3日間版','220,000円（税込）<span class="cf-sub">本体 200,000円 ＋ 消費税 20,000円</span>','3日間','2026年11月16日(月) 〜 18日(水)　各日 10:00〜17:00（うち昼休憩1時間）','8名（最少開講人数 3名）']
   };
   var cfH=document.getElementById('cf-h'), cfList=document.getElementById('cf-list'), cfEmpty=document.getElementById('cf-empty');
   function drawCf(rows,title){
@@ -602,12 +631,12 @@ form{ text-align:left;}
       var c=CF[r.value];
       if(!c){
         drawCf([['コース','<b>AI秘書コース</b>'],
-                ['受講料','3ヶ月版 150,000円 ／ 3日間版 200,000円（税込）'],
+                ['受講料','3ヶ月版 165,000円 ／ 3日間版 220,000円（いずれも税込）'],
                 ['このあと','後日ZOOMにて面談のご案内をお送りします。<b>この時点ではお申し込みは確定しません。</b>受講料も発生しません。']],'ご相談の内容');
       } else {
         drawCf([['コース','<b>'+c[0]+'</b>'],['受講料','<b>'+c[1]+'</b>'],['回数・期間',c[2]],
                 ['開講日程',c[3]],['形式','オンライン（Zoom）'],['定員',c[4]],
-                ['お支払い',CF_PAY],['キャンセル・返金',CF_REF]],'お申し込み内容の確認');
+                ['お支払い',CF_PAY],['キャンセル・返金',(c[0].indexOf('3日間版')>=0?CF_REF3:CF_REF)]],'お申し込み内容の確認');
       }
     });
   });
@@ -618,7 +647,11 @@ form{ text-align:left;}
     btn.disabled=true; btn.style.opacity=.6; err.style.display='none';
     fetch(ENDPOINT,{method:'POST', body:new URLSearchParams(new FormData(form)), headers:{'Accept':'application/json'}})
       .then(function(r){
-        if(r.ok){ form.style.display='none'; thanks.style.display='block';
+        if(r.ok){ var sc=form.querySelector('input[name="course"]:checked');
+          var isC=!!(sc && sc.value.indexOf('相談')>=0);
+          thanks.querySelector('.th-apply').hidden=isC;
+          thanks.querySelector('.th-consult').hidden=!isC;
+          form.style.display='none'; thanks.style.display='block';
           thanks.scrollIntoView({behavior:'smooth', block:'center'}); }
         else{ throw new Error(); }
       })

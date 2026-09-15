@@ -561,8 +561,8 @@ form{ text-align:left;}
         <p class="cprice"><span class="num">220,000</span><span class="yen">円（税込）</span></p>
         <p class="ctax">本体 200,000円 ＋ 消費税 20,000円</p>
         <dl>
-          <dt>期間</dt><dd>3日間</dd>
-          <dt>日程</dt><dd>2026年10月19日(月)〜21日(水)</dd>
+          <dt>期間</dt><dd>3日間（計18時間）</dd>
+          <dt>日程</dt><dd><span class="w">2026年10月19日(月)〜21日(水)</span><br><span class="w">各日 10:00〜17:00</span><span class="w">（うち昼休憩1時間）</span></dd>
           <dt>形式</dt><dd>オンライン（Zoom）</dd>
           <dt>定員</dt><dd>8名</dd>
           <dt>最少開講人数</dt><dd>3名</dd>
@@ -606,12 +606,11 @@ form{ text-align:left;}
       <p class="klead"><span class="w">お支払い完了後にキャンセルされる場合は、</span><span class="w">ご連絡をいただいた時期に応じて、</span><span class="w">次のとおり返金いたします。</span></p>
       <table class="ktable">
         <tbody>
-          <tr><th>申込日を起算日として8日以内</th><td>受講料の100％を返金</td></tr>
-          <tr><th>9日目以降 〜 開催日の8日前 終日まで</th><td>受講料の30％を返金</td></tr>
-          <tr><th>開催日の7日前以降</th><td>返金不可</td></tr>
+          <tr><th>開講日の8日前 終日まで</th><td>受講料の30％を返金</td></tr>
+          <tr><th>開講日の7日前以降</th><td>返金不可</td></tr>
         </tbody>
       </table>
-      <p class="knote"><span class="w">※返金の際に発生する振込手数料は</span><span class="w">お客様負担となります。</span><br><span class="w">また、開催日の7日前以降は、</span><span class="w">いかなる理由であっても</span><span class="w">返金いたしかねます。</span></p>
+      <p class="knote"><span class="w">※返金の際に発生する振込手数料は</span><span class="w">お客様負担となります。</span><br><span class="w">また、開講日の7日前以降は、</span><span class="w">いかなる理由であっても</span><span class="w">返金いたしかねます。</span></p>
 
       <p class="ksub">お申し込みが最少開講人数に満たない場合</p>
       <p class="klead"><span class="w">開講を延期または中止し、</span><span class="w">お支払い済みの受講料は</span><span class="w">全額を返金いたします。</span></p>
@@ -705,9 +704,17 @@ form{ text-align:left;}
       </div>
     </form>
     <div class="thanks">
-      <p class="tt">仮申し込みを受け付けました</p>
+      <div class="th-apply">
+      <p class="tt">お申し込みを受け付けました</p>
       <p><span class="w">ご入力のメールアドレス宛に、</span><span class="w">受講とお支払いのご案内をお送りします。</span><br>
       <span class="w">メールが届かない場合は、</span><span class="w">迷惑メールフォルダのご確認をお願いします。</span></p>
+      </div>
+      <div class="th-consult" hidden>
+      <p class="tt">ご相談を受け付けました</p>
+      <p><span class="w">後日、面談の日程を</span><span class="w">ご入力のメールアドレス宛にご案内します。</span><br>
+      <span class="w">この時点ではお申し込みは確定せず、</span><span class="w">受講料も発生しません。</span><br>
+      <span class="w">メールが届かない場合は、</span><span class="w">迷惑メールフォルダのご確認をお願いします。</span></p>
+      </div>
     </div>
   </div>
 </section>
@@ -743,17 +750,17 @@ form{ text-align:left;}
   var CF_ROWS_APPLY=[
     ['コース','<b>AIを活用した新規事業開発コース</b>'],
     ['受講料','<b>220,000円（税込）</b><span class="cf-sub">本体 200,000円 ＋ 消費税 20,000円</span>'],
-    ['回数・期間','3日間'],
-    ['開講日程','2026年10月19日(月) 〜 21日(水)'],
+    ['回数・期間','3日間（計18時間）'],
+    ['開講日程','2026年10月19日(月) 〜 21日(水)　各日 10:00〜17:00（うち昼休憩1時間）'],
     ['形式','オンライン（Zoom）'],
     ['定員','8名（最少開講人数 3名）'],
     ['お支払い','お申し込み後にお送りするご案内メールに記載の方法で、メールのお送りから7日以内にお支払いください。お支払いに際して生じる振込手数料はお客様のご負担となります。'],
-    ['キャンセル・返金','申込日を起算日として8日以内は受講料の100％、9日目以降〜開催日の8日前 終日までは受講料の30％を返金します。開催日の7日前以降は返金不可です。返金の際に生じる振込手数料はお客様のご負担となります。']
+    ['キャンセル・返金','開講日の8日前 終日までは受講料の30％を返金します。開講日の7日前以降は返金不可です。返金の際に生じる振込手数料はお客様のご負担となります。']
   ];
   var CF_ROWS_CONSULT=[
     ['コース','<b>AIを活用した新規事業開発コース</b>'],
     ['受講料','220,000円（税込／本体200,000円）'],
-    ['開講日程','2026年10月19日(月) 〜 21日(水)'],
+    ['開講日程','2026年10月19日(月) 〜 21日(水)　各日 10:00〜17:00（うち昼休憩1時間）'],
     ['このあと','後日ZOOMにて面談のご案内をお送りします。<b>この時点ではお申し込みは確定しません。</b>受講料も発生しません。']
   ];
   var cfH=document.getElementById('cf-h'), cfList=document.getElementById('cf-list'), cfEmpty=document.getElementById('cf-empty');
@@ -779,7 +786,11 @@ form{ text-align:left;}
     btn.disabled=true; btn.style.opacity=.6; err.style.display='none';
     fetch(ENDPOINT,{method:'POST', body:new URLSearchParams(new FormData(form)), headers:{'Accept':'application/json'}})
       .then(function(r){
-        if(r.ok){ form.style.display='none'; thanks.style.display='block';
+        if(r.ok){ var sc=form.querySelector('input[name="course"]:checked');
+          var isC=!!(sc && sc.value.indexOf('相談')>=0);
+          thanks.querySelector('.th-apply').hidden=isC;
+          thanks.querySelector('.th-consult').hidden=!isC;
+          form.style.display='none'; thanks.style.display='block';
           thanks.scrollIntoView({behavior:'smooth', block:'center'}); }
         else{ throw new Error(); }
       })
